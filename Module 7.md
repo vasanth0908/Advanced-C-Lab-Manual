@@ -1,9 +1,9 @@
-EXP NO:1 C PROGRAM FOR ARRAY OF STRUCTURE TO CHECK ELIGIBILITY FOR THE VACCINE.
+## EXP NO:1 C PROGRAM FOR ARRAY OF STRUCTURE TO CHECK ELIGIBILITY FOR THE VACCINE.
 
-Aim:
+## Aim:
 To write a C program for array of structure to check eligibility for the vaccine person age above 6 years of age.
 
-Algorithm:
+## Algorithm:
 1.	Declare structure eligible with age (integer) and n (character array)
 2.	Declare variable e of type eligible
 3.	Input age and name using scanf, store in e
@@ -14,26 +14,43 @@ Else
 5.	Print details (e.age, e.n)
 6.	Return 0
  
-Program:
+## Program:
+#include<stdio.h>
+struct person
+{
+    int age;
+    char name[50];
+}p;
+int main()
+{
+    struct person;
+    scanf("%d",&p.age);
+    scanf("%s",p.name);
+    printf("Age:%d\n",p.age);
+    printf("Name:%svaccine:%d\n",p.name,p.age);
+    
+ if(p.age>18){
+     printf("eligibility:yes");
+ }   else{
+     printf("eligibility:no");
+ }
+}
+## Output:
 
-//type your code here
+![image](https://github.com/user-attachments/assets/d7681dc9-8c45-4c2c-94d9-565abbc6dd96)
 
 
-Output:
 
-//paste your output here
-
-
-Result:
+## Result:
 Thus, the program is verified successfully. 
 
 
 
-EXP NO:2 C PROGRAM FOR PASSING STRUCTURES AS FUNCTION ARGUMENTS AND RETURNING A STRUCTURE FROM A FUNCTION
-Aim:
+## EXP NO:2 C PROGRAM FOR PASSING STRUCTURES AS FUNCTION ARGUMENTS AND RETURNING A STRUCTURE FROM A FUNCTION
+## Aim:
 To write a C program for passing structure as function and returning a structure from a function
 
-Algorithm:
+## Algorithm:
 1.	Define structure numbers with members a and b.
 2.	Declare variable n of type numbers.
 3.	Prompt the user to enter values for a and b.
@@ -42,7 +59,7 @@ Algorithm:
 6.	Print the result returned by the add function.
 7.	Return 0
  
-Program:
+## Program:
 
 //type your code here
 
